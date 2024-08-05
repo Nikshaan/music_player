@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicPlayer | Nikshaan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" type="x-icon" href="media/icon.png">
+
+</head>
+
+<body>
+    <div class="music-player">
+
+        <div class="menu">
+            <i class="fa-solid fa-chevron-down"></i>
+                <div class="library">
+                    <p>PLAYING FROM YOUR LIBRARY</p>
+                    <p class="library-name">Liked Songs</p>
+                </div>
+            <i class="fa-solid fa-ellipsis-vertical"></i>            
+        </div>
+
+        <div class="music-image">
+            <img src="media/wavinflag.jpg" alt="album-image" height="200px" width="200px" id="albumImage">
+        </div>
+
+        <div class="music-details">
+            <div class="name">
+                <h2 class="songName">Wavin' Flag</h2>
+                <p class="artistName">K'naan</p>
+            </div>
+            <div class="heart">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+        </div>
+
+        <audio id="song">
+            <source src="media/KNAAN  Wavin Flag CocaCola Celebration Mix.mp3" type="audio/mp3" id="songSource">
+        </audio>
+
+        <input type="range" value="0" id="music-progress">
+
+        <div class="music-controls">
+            <div class="rewind" onclick="previousSong()">
+                <i class="fa-solid fa-backward"></i>
+            </div>
+            <div class="play" onclick="playPause()">
+                <i class="fa-solid fa-play" id="playicon"></i>
+            </div>
+            <div class="forward" onclick="nextSong()">
+                <i class="fa-solid fa-forward"></i>
+            </div>
+        </div>
+
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
